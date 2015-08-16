@@ -15,7 +15,8 @@ mobile APIs.
 You'll probably want to do most of your development in a web browser.
 
 Just launch a static web server like [http-server][] from the `www`
-directory and visit it.
+directory and visit it. You'll get a message that `cordova.js` can't be
+found, but this can be safely ignored.
 
 You can add the following to the querystring for debugging:
 
