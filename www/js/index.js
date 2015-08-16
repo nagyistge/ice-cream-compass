@@ -80,7 +80,13 @@ function watchHeading() {
         var relativeBearing = bearing - heading.magneticHeading;
         update('heading', heading.magneticHeading);
         update('relativeBearing', relativeBearing);
-        document.getElementById('logo').style.transform = "rotate(" + (relativeBearing + 180) + "deg)";
+        var transform = "rotate(" + (relativeBearing + 180) + "deg)";
+        var logo = document.getElementById('logo');
+        if ('transform' in logo.style) {
+            logo.style.transform = transform;
+        } else if ('webkitTransform' in logo.style) {
+            logo.style.webkitTransform = transform;
+        }
     }, function error(error) {
         console.log(error);
     });

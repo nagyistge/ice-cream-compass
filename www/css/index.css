@@ -37,6 +37,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+
     text-align: center;
     height: 100vh;
 }
