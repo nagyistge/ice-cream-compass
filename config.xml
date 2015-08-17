@@ -13,6 +13,7 @@
     <plugin name="cordova-plugin-geolocation" spec="1.0.1" />
     <access origin="*" />
     <preference name="Orientation" value="portrait" />
+    <preference name="DisallowOverscroll" value="true"/>
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
