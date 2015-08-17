@@ -12,6 +12,7 @@
     <plugin name="cordova-plugin-device-orientation" spec="1.0.1" />
     <plugin name="cordova-plugin-geolocation" spec="1.0.1" />
     <access origin="*" />
+    <icon src="res/iv-icon.png" />
     <preference name="Orientation" value="portrait" />
     <preference name="DisallowOverscroll" value="true"/>
     <preference name="KeepRunning" value="false"/>
