@@ -34,7 +34,6 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         if (/fakeCompass/.test(location.search)) initFakeCompass();
-        if (screen.lockOrientation) screen.lockOrientation('portrait');
         if (navigator.geolocation) watchPosition();
         if (navigator.compass) watchHeading();
     }
